@@ -149,8 +149,9 @@ def paste_stat(background, image, position):
 
 def main():
 
-    font = ImageFont.truetype("/home/jt/.fonts/ttf/CascadiaCode.ttf", 15)
-    stat_font = ImageFont.truetype("/home/jt/.fonts/ttf/CascadiaCode.ttf", 20)
+
+    font = ImageFont.truetype("./fonts/CascadiaCode.ttf", 15)
+    stat_font = ImageFont.truetype("./fonts/CascadiaCode.ttf", 20)
 
     stat = create_stat_with_text(
         size=(200, 100),
@@ -165,7 +166,7 @@ def main():
 
     # pass
 
-    dir = "/home/jt/Pictures/Backgrounds/"
+    dir = "background/"
     background = "second_iss_#282828_#458588_#E7D7AD_2.png"
 
     image_path = dir + background
