@@ -34,7 +34,9 @@ class ISSListener:
             previous_value = self.previous_values[item_name]
 
             # Check if the value has increased
-            if previous_value is not None and new_value > previous_value:
+            if (previous_value is not None and 
+                round(new_value, 2) > round(previous_value, 2)):
+                
                 self.last_increase_times[item_name] = datetime.now()
 
             # Update the previous value
